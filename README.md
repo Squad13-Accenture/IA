@@ -1,11 +1,9 @@
 # Projeto de Residência Tecnológica - Chatbot para Gerenciamento de Documentação de Software
 
+![image](https://github.com/Squad13-Accenture/IA/assets/112042523/84d4b446-4c34-457b-9132-27ff4825e349)
+
 # Objetivo:
 Desenvolver um chatbot que permita aos usuários armazenar e recuperar documentação de software em um repositório, além de facilitar o upload de novos documentos diretamente pelo chatbot.
-
-
-![image](https://github.com/Squad13-Accenture/IA/assets/112042523/41957904-7696-4dda-846b-0f3b4cc14d2b)
-
 
 # Recursos Principais:
 

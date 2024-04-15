@@ -1,7 +1,7 @@
 # Projeto de Residência Tecnológica - Chatbot para Gerenciamento de Documentação de Software
 
 # Objetivo:
-Desenvolver um chatbot para accenture que permita aos usuários armazenar e recuperar documentação de software em um repositório, além de facilitar o upload de novos documentos diretamente pelo chatbot.
+Desenvolver um chatbot que permita aos usuários armazenar e recuperar documentação de software em um repositório, além de facilitar o upload de novos documentos diretamente pelo chatbot.
 
 # Recursos Principais:
 

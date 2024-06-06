@@ -24,7 +24,7 @@ Criar uma funcionalidade que permita aos usuários fazer upload de novos documen
 
 Recuperação de Documentos:
 
-Desenvolver algoritmos de busca eficientes para recuperar a documentação solicitada pelos usuários.
+Desenvolver algoritmos de busca eficientes para recuperar informações sobre a documentação solicitada pelos usuários.
 Permitir que os usuários solicitem documentos específicos por meio de consultas ao chatbot.
 
 Observações:

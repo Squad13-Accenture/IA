@@ -36,10 +36,10 @@ Para verificar se a instalação foi bem sucedida, digite o seguinte comando:
 git --version
 Você deverá ver a versão do Git instalada no seu sistema.
 
-Clone o repositório para o seu ambiente local e instale o python.
-Instale as dependências do projeto.
-Configure as chaves de acesso para as APIs do Gemini e do Langchain.
-Inicie o servidor Django.
+- Clone o repositório para o seu ambiente local e instale o python.
+- Instale as dependências do projeto.
+- Configure as chaves de acesso para as APIs do Gemini e do Langchain.
+- Inicie o servidor Django.
 
 ## Como Contribuir
 - Faça um fork do repositório.

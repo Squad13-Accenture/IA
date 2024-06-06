@@ -32,8 +32,5 @@ Este projeto consiste em um chatbot desenvolvido para a Accenture, permitindo o 
 ## Agradecimentos
 Agradecemos à equipe de desenvolvimento e aos colaboradores por seu trabalho neste projeto.
 
-## Banco de Dados
-- **PostgreSQL:** Utilizado como banco de dados para armazenar informações sobre os arquivos processados e as interações do usuário com o assistente.
-
 ## Contato
 Se tiver alguma dúvida ou sugestão, entre em contato com a equipe de desenvolvimento.

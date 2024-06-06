@@ -19,7 +19,7 @@ Este projeto consiste em um chatbot desenvolvido para a Accenture, permitindo o 
 - **PostgreSQL:** Banco de dados relacional utilizado para armazenar os dados do sistema.
 
 ## Como utilizar o projeto:
-## Windows:
+Windows:
 Instalação do Git Bash no Windows
 Acesse o site oficial do Git Bash (link) e baixe o instalador para o Windows.
 Execute o instalador e siga as instruções na tela. Isso irá instalar o Git Bash no seu computador.
@@ -27,7 +27,7 @@ Para verificar se a instalação foi bem sucedida, abra o Git Bash e digite o se
 git --version
 Você deverá ver a versão do Git Bash instalada no seu sistema³.
 
-## Linux:
+Linux:
 Instalação do Git Bash no Linux
 Abra um terminal.
 Dependendo da distribuição Linux que você está usando, você pode instalar o Git usando o gerenciador de pacotes do seu sistema. Por exemplo, se você estiver usando uma distribuição baseada em Debian, como o Ubuntu, você pode usar o seguinte comando:
@@ -36,10 +36,10 @@ Para verificar se a instalação foi bem sucedida, digite o seguinte comando:
 git --version
 Você deverá ver a versão do Git instalada no seu sistema.
 
- Clone o repositório para o seu ambiente local e instale o python.
- Instale as dependências do projeto.
- Configure as chaves de acesso para as APIs do Gemini e do Langchain.
- Inicie o servidor Django.
+Clone o repositório para o seu ambiente local e instale o python.
+Instale as dependências do projeto.
+Configure as chaves de acesso para as APIs do Gemini e do Langchain.
+Inicie o servidor Django.
 
 ## Como Contribuir
 - Faça um fork do repositório.

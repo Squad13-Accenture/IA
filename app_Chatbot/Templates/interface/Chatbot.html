@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/icon.png' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chat-user">
+                <div class="chat-user-img">
+                    <img src="{% static 'img/accenture-logo.png' %}" alt="Leitor de Dados">
+                </div>
+            </div>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div id="bot-message" class="bot-message">Olá! Como posso ajudar você hoje?</div>
+            <div class="user-messages" id="user-messages"></div>
+        </div>
+
+        <div class="chat-input">
+            <form id="file-upload-form" action="{% url 'upload_arquivo' %}" enctype="multipart/form-data" method="POST" class="input-with-button">
+                {% csrf_token %}
+                <input type="file" name="arquivo" id="file-input" style="display: none;" accept=".pdf,.docx,.csv,.pptx,.xlsx,.xls" multiple>
+                <button id="file-upload-button" type="button"><img src="{% static 'img/mais.png' %}" alt="Ícone do botão"></button>
+                <button id="upload-file-btn" class="bi bi-database-fill-down" type="submit">Enviar</button>                        
+            </form>
+            <form id="user-message-form" action="{% url 'consulta' %}" method="POST"> <!-- Formulário para enviar mensagem do usuário -->
+                {% csrf_token %}
+                <input type="text" name="consulta" id="consulta-input" placeholder="Digite sua mensagem...">
+                <button type="submit" id="submit"><img src="{% static 'img/enviar-mensagem.png' %}" alt="Ícone do botão"></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de sucesso -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="success-message"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'Js/script.js' %}"></script>
+
+</body>
+</html>

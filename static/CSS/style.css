@@ -1,0 +1,409 @@
+/* Reset de estilos */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: rgba(178, 1, 253, 0.5);
+}
+
+/* Estilo da barra de navegação */
+.navbar-img {
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.navbar-img img {
+  width: 500px;
+  height: auto;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.navbar li a:hover {
+  background-color: #bc20ff;
+  color: white;
+}
+
+.nav-buttons {
+  display: block;
+  position: relative;  
+  width: 100%;
+  top: 54.5%;
+}
+
+.nav-browse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+  gap: 50px;
+}
+
+.nav-arq {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-browse img {
+  position: relative;
+  width: 20px;
+  height: auto;
+  margin: 0px 5px 0px 0px;
+  top: 3px;
+}
+
+.nav-browse button {
+  padding: 8px 15px;
+  background-color: #b201fd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#btn-process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btn-process button {
+  padding: 8px 15px;
+  background-color: #b201fd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 20px;  
+  margin-top: 30px;
+}
+
+/* Estilo do container do chat */
+.chat-container {
+  width: 95%; /* Ajuste para expandir a largura */
+  height: 900px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto; /* Centraliza na tela */
+}
+
+/* Estilo do cabeçalho do chat */
+.chat-header {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilo do usuário no chat */
+.chat-user {
+  display: flex;
+  text-align: center;
+}
+
+.chat-user-img {
+  max-width: 140px;
+  height: auto;
+  margin-right: 5px;
+  margin-top: -1px;
+  align-items: center;
+  display: flex;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.chat-user-img img {
+  max-width: 136px;
+  height: auto;
+  margin-right: 5px;
+  margin-top: -1px;
+  align-items: center;
+  display: flex;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo das mensagens do chat */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Estilo das mensagens do chatbot */
+.bot-message {
+  background-color: #b201fd;
+  position: relative;
+  color: white;
+  padding: 8px 8px 8px 15px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  font-size: 20px;
+  overflow: visible;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+  height: auto;
+}
+
+.bot-message::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -5px;
+  top: 10px;
+  background: #b201fd;
+  transform: rotate(45deg)
+}
+
+/* Estilo das mensagens do usuário */
+.user-message {
+  background-color: white;
+  color: black;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 1%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  font-size: 20px;
+  position: relative;
+  height: auto;
+  font-weight: bold; /* Deixa o texto em negrito */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+.user-message::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -5px;
+  top: 10px;
+  background: white;
+  transform: rotate(45deg);
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da resposta do usuário */
+.message.user {
+  position: relative;
+  background-color: #bc20ff; 
+  color: #000; 
+  margin-right: 30px;
+  max-width: 70%; 
+}
+
+/* Estilo do input de texto do chat */
+.chat-input {
+  display: flex; /* Altera o display para flex */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 10px; /* Adiciona espaçamento entre o input e os botões */
+  padding: 10px; /* Adiciona padding ao redor do contêiner */
+  background-color: white; /* Adiciona uma cor de fundo para o contêiner */
+  border-top: 1px solid #ccc; /* Adiciona uma borda superior */
+}
+
+/* Estilo do input de texto do chat */
+.chat-input input[type="text"] {
+  flex: 1; /* Ajusta o input para ocupar o espaço disponível */
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* Estilo do botão de enviar */
+.chat-input button {
+  padding: 15px 20px;
+  background-color: #b201fd ;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input button:focus {
+  outline: none;
+}
+
+/* Estilo do input de arquivo */
+#file-upload-button {
+  padding: 15px 20px;
+  background-color: #A100FF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+  
+}
+/* Estilo do botão enviar arquivo */
+#upload-file-btn {
+  font-size: 18px;
+  
+}
+
+#file-upload-button:focus {
+  outline: none;
+}
+
+/* Estilize o input de texto para que ele ocupe toda a largura disponível */
+@media (max-width: 768px) {
+  .chat-input {
+      width: 100%;
+      justify-content: center; /* Centraliza o conteúdo na tela */
+  }
+
+  .chat-input input[type="text"] {
+      max-width: 400px; /* Defina um tamanho máximo para evitar que o input fique muito largo */
+  }
+}
+
+/* Estilo do input de arquivo */
+#file-upload-button {
+  padding: 15px 20px;
+  background-color: #b201fd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#file-upload-button:focus {
+  outline: none;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); 
+  border: none;
+}
+
+.modal-content {
+  background-color: white;
+  border: none;
+}
+
+/* Estilo do contêiner do modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border-radius: 10px; 
+  width: 50%;
+  max-width: 500px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border: none;
+}
+
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilo do contêiner de resposta */
+.response-container {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* Estilo da resposta do bot */
+.bot-response {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #b201fd; 
+  border-radius: 5px;
+  color: white; 
+}
+
+#bot-message {
+  background-color: #b201fd; 
+  padding: 10px;
+  border-radius: 5px;
+  color: white; 
+}
+
+#consulta-input{
+align-items: center;
+width: 1500px;
+margin-left: 50px;
+}
+
+#consulta-input input[type="text"] {
+  flex: 1; /* Ajusta o input para ocupar o espaço disponível */
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: border-color 0.3s ease;
+  outline: none;
+  margin-left: 50px; /* Adiciona espaço à esquerda do input */
+}
+
+/* Estilo do texto dentro dos balões de resposta do chatbot */
+.bot-message, .user-message {
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center; 
+  font-family: 'Verdana';
+}

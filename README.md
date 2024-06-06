@@ -1,7 +1,7 @@
 # Chatbot para Consulta de Documentação de Software
 
 
-![robo](https://github.com/Squad13-Accenture/IA/assets/112042523/81eb4d69-9662-45ff-8b51-031ac03e42c0)
+![image](https://github.com/Squad13-Accenture/IA/assets/112042523/57c1366b-eef1-4884-af43-46110bae8d82)
 
 
 ## Descrição
